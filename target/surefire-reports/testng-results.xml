@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="62677" started-at="2018-10-07T09:24:15Z" finished-at="2018-10-07T09:25:18Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="62677" started-at="2018-10-07T09:24:15Z" finished-at="2018-10-07T09:25:18Z">
+      <class name="com.renju.training.jenkins.JenkinsCalcTest">
+        <test-method status="PASS" signature="addTest()[pri:0, instance:com.renju.training.jenkins.JenkinsCalcTest@1e742e4]" name="addTest" duration-ms="67" started-at="2018-10-07T09:24:16Z" finished-at="2018-10-07T09:24:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTest -->
+        <test-method status="PASS" signature="subtractTest()[pri:0, instance:com.renju.training.jenkins.JenkinsCalcTest@1e742e4]" name="subtractTest" duration-ms="1" started-at="2018-10-07T09:24:16Z" finished-at="2018-10-07T09:24:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subtractTest -->
+      </class> <!-- com.renju.training.jenkins.JenkinsCalcTest -->
+      <class name="com.renju.training.jenkins.SampleSeleniumTest">
+        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.renju.training.jenkins.SampleSeleniumTest@15acfb2]" name="startBrowser" is-config="true" duration-ms="16489" started-at="2018-10-07T09:24:16Z" finished-at="2018-10-07T09:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method status="PASS" signature="validateGoogleId()[pri:0, instance:com.renju.training.jenkins.SampleSeleniumTest@15acfb2]" name="validateGoogleId" duration-ms="44786" started-at="2018-10-07T09:24:32Z" finished-at="2018-10-07T09:25:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGoogleId -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.renju.training.jenkins.SampleSeleniumTest@15acfb2]" name="closeBrowser" is-config="true" duration-ms="826" started-at="2018-10-07T09:25:17Z" finished-at="2018-10-07T09:25:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.renju.training.jenkins.SampleSeleniumTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
