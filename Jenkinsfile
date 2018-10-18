@@ -9,7 +9,7 @@ pipeline {
 		
 		stage("Email Build Status"){
 			steps {
-				mail bcc: '', body: "${currentBuild.fullDisplayName}", cc: 'renju.jenkins.training@gmail.com', from: '', replyTo: '', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!', to: 'renju.jenkins.training@gmail.com'
+				mail bcc: '', body: "${currentBuild.fullDisplayName}", cc: 'renju.jenkins.training@gmail.com', from: '', replyTo: '', subject: '${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - ${currentBuild.result}', to: 'renju.jenkins.training@gmail.com'
 			}
 		}
 	}
