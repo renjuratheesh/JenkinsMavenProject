@@ -6,16 +6,14 @@ pipeline {
 				bat "mvn clean"
 			}
 		}
-		stage("Parallel Execution") {
+		stage("Testing Stage") {
 			steps {
-				parallel(
-				      a: {
-					bat "mvn clean"
-				      },
-				      b: {
-					bat "mvn package"
-				      }
-    				)
+				bat "mvn test"
+			}
+		}
+		stage("Packaging Stage") {
+			steps {
+				bat "mvn package"
 			}
 		}
 	}
