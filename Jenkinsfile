@@ -7,14 +7,16 @@ pipeline {
 			}
 		}
 		stage("Parallel Execution") {
-			parallel(
-			      a: {
-			        bat "mvn clean"
-			      },
-			      b: {
-			        bat "mvn package"
-			      }
-    			)
+			steps {
+				parallel(
+				      a: {
+					bat "mvn clean"
+				      },
+				      b: {
+					bat "mvn package"
+				      }
+    				)
+			}
 		}
 	}
 }
